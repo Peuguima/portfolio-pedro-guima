@@ -1,0 +1,210 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.container-css {
+    min-height: 100vh;
+    max-width: 100vw;
+    background: linear-gradient(black, rgba(0, 0, 0, 0.842), rgba(0, 0, 0, 0.788));
+    font-family: 'Roboto', sans-serif;
+}
+
+ul {
+    list-style: none;
+}
+
+.titulos {
+    font-size: 40px;
+    color: #70FF00;
+}
+
+.header_menu {
+    height: 60px;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.header_menu h3 {
+    color: #70FF00
+}
+
+.header_list ul {
+    display: flex;
+    flex-direction: row;
+}
+
+.header_list a {
+    text-decoration: none;
+    color: white;
+    margin: 15px;
+}
+
+.links img {
+    height: 20px;
+    margin-right: 23px;
+}
+
+.container_main {
+    padding-top: 80px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.main_background {
+    color: white;
+    margin-right: 280px;
+
+}
+
+.main_background_info h3 {
+    font-size: 30px;
+}
+
+.main_background_info h2 {
+    font-size: 30px;
+    margin-top: 120px;
+}
+
+.main_background_info h1 {
+    font-size: 50px;
+    position: absolute;
+    top: 268px;
+    color: #70FF00;
+    border-right: 1px solid #70FF00;
+    white-space: nowrap;
+    overflow: hidden;
+}
+
+.typing_animation {
+    animation: blinkCursor 1000ms steps(40) infinite normal, typing 2s steps(40) 1s normal both;
+}
+
+@keyframes typing {
+    from {
+        width: 0;
+    }
+
+    to {
+        width: 488px;
+    }
+}
+
+@keyframes blinkCursor {
+    from {
+        border-right-color: #70FF00;
+    }
+
+    to {
+        border-right-color: transparent;
+    }
+}
+
+.main_info {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 30px;
+}
+
+.main_background_info_exp {
+    color: #828282;
+    font-size: 20px;
+    font-weight: 100;
+    display: flex;
+    align-items: center;
+}
+
+.main_background_info_project {
+    color: #828282;
+    font-size: 20px;
+    font-weight: 100;
+    display: flex;
+    align-items: center;
+}
+
+.main_background_info_exp h2 {
+    font-size: 55px;
+    margin: 10px;
+}
+
+.main_background_info_project h2 {
+    font-size: 55px;
+    margin: 10px;
+}
+
+.main_aboutme {
+    width: 763px;
+    display: flex;
+    flex-direction: column;
+    padding-left: 100px;
+    text-align: justify;
+}
+
+.main_aboutme h2 {
+    color: #70FF00;
+    margin-bottom: 30px;
+}
+
+.main_aboutme p {
+    color: white;
+}
+
+.skills {
+    padding: 100px;
+}
+
+.skills_image {
+    margin-top: 80px;
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.projetos {
+    display: flex;
+    flex-direction: column;
+    padding-left: 100px;
+}
+
+.container_footer {
+    padding-left: 100px;
+    display: flex;
+    flex-direction: column;
+
+}
+
+.text_footer {
+    padding: 30px;
+    display: flex;
+    flex-direction: row;
+}
+
+.text_footer p {
+    color: white;
+    width: 200px;
+    text-align: justify;
+    padding-left: 50px;
+}
+
+.links_footer {
+    height: 130px;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    position: absolute;
+    right: 320px;
+}
+
+.links_footer a {
+    padding: 10px;
+}
+
+
+.link_email {
+    text-decoration: none;
+    color: white;
+    display: flex;
+    align-items: center;
+}

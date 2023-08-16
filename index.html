@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;400&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.css">
+</head>
+
+<body>
+    <div class="container-css">
+        <header>
+            <div class="header_menu">
+                <h3 class="titulos">
+                    &lt;PG/&gt;
+                </h3>
+                <div class="header_list">
+                    <ul>
+                        <li><a href="">Sobre mim</a></li>
+                        <li><a href="">Skills</a></li>
+                        <li><a href="">Projetos</a></li>
+                    </ul>
+                </div>
+                <div class="links">
+                    <a href="https://www.linkedin.com/in/pedroguimaraessimoes/"><img src="./assets/linkedin.svg"
+                            alt="linkedin"></a>
+                    <a href="https://github.com/Peuguima"><img src="./assets/github.svg" alt="github"></a>
+                </div>
+            </div>
+        </header>
+        <main>
+            <div class="container_main">
+                <section>
+                    <div class="main_background">
+                        <div class="main_background_info">
+                            <h3>Olá, eu sou</h3>
+                            <h1 class="typing_animation">&lt; Pedro Guimarães /&gt;</h1>
+                            <h2>Desenvolvedor Fullstack Jr</h2>
+                        </div>
+                        <div class="main_info">
+                            <div class="main_background_info_exp">
+                                <h2>1</h2>
+                                <span>Ano de <br> experiência</span>
+                            </div>
+                            <div class="main_background_info_project">
+                                <h2>7</h2>
+                                <span>Projetos <br> Concluídos</span>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+                <section>
+                    <div class="main_background_img">
+                        <img src="./assets/image.svg" alt="foto perfil de Pedro">
+                    </div>
+                </section>
+            </div>
+            <section>
+                <div class="main_aboutme">
+                    <h2 class="titulos">SobreMim ( )</h2>
+                    <p>Sou um Desenvolvedor Web júnior que fez a transição de carreira da área de Engenharia Civil
+                        para a tecnologia. Com formação em Engenharia Civil, descobri minha paixão pelo universo da
+                        programação e resolvi investir nessa área. Tenho muita sede em aprender e também de
+                        solucionar problemas de maneira criativa, sustentavel e rápida para o negócio.
+                        Atualmente, estou em busca de novas oportunidades para expandir meu conhecimento e aplicar
+                        minhas habilidades.
+                        Possuo conhecimento em: Git, HTML, CSS, Javascript, NodeJS, Criação de APIs, ReactJS, Banco
+                        de Dados (PostgreeSQL), Criptografias, Consultas e Montagem de Querys SQL, Organização e
+                        Refatoração, Deploys, Escopagem de API </p>
+                </div>
+            </section>
+            <section>
+                <div class="skills">
+                    <h2 class="titulos">Skills ( )</h2>
+                    <div class="skills_image">
+                        <img src="./assets/javascript.svg" alt="javascript icon">
+                        <img src="./assets/html.svg" alt="html icon">
+                        <img src="./assets/css.svg" alt="css icon">
+                        <img src="./assets/nodejs.svg" alt="nodejs icon">
+                        <img src="./assets/react.svg" alt="react icon">
+                    </div>
+                </div>
+            </section>
+            <section>
+                <div class="projetos">
+                    <h2 class="titulos">Projetos ( )</h2>
+                    <div class="carousel">
+
+                        <a class="carousel-item" href="https://github.com/Peuguima/JogoDaMemoriaDev-React"><img
+                                src="https://camo.githubusercontent.com/4d95916be42d6972513da85fe1aaa77348bf1abc3d7258da710277e767190dcb/68747470733a2f2f692e696d6775722e636f6d2f7757516771375a2e706e67"></a>
+                        <a class="carousel-item" href="#two!"><img src="./assets/linkedin.svg"></a>
+                        <a class="carousel-item" href="#three!"><img src="./assets/image.svg"></a>
+                        <a class="carousel-item" href="#four!"><img src="./assets/react.svg"></a>
+                        <a class="carousel-item" href="#five!"><img src="./assets/nodejs.svg"></a>
+                    </div>
+                </div>
+            </section>
+        </main>
+        <footer>
+            <div class="container_footer">
+                <h2 class="titulos">Contatos ( )</h2>
+                <div class="text_footer">
+                    <p>
+                        Se você gostou do meu trabalho e precisa de mim, estou pronto para conversar com você.
+
+                    </p>
+                    <div class="links_footer">
+
+                        <a href="https://www.linkedin.com/in/pedroguimaraessimoes/"><img src="./assets/linkedin.svg"
+                                alt="linkedin"></a>
+                        <a href="https://github.com/Peuguima"><img src="./assets/github.svg" alt="github"></a>
+                        <a class="link_email" href="#"><img class="img_email" src="./assets/email.svg" alt="email">
+                            <strong>pedro.guimasds@gmail.com</strong></a>
+                    </div>
+                </div>
+            </div>
+        </footer>
+    </div>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+    <script>
+        document.addEventListener('DOMContentLoaded', function () {
+            var elems = document.querySelectorAll('.carousel');
+            var instances = M.Carousel.init(elems, {
+                dist: -5,
+                shift: 20
+            });
+        });
+    </script>
+</body>
+
+</html>
