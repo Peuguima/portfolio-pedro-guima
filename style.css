@@ -4,10 +4,14 @@
     box-sizing: border-box;
 }
 
-.container-css {
+body {
     min-height: 100vh;
     max-width: 100vw;
     background: linear-gradient(black, rgba(0, 0, 0, 0.842), rgba(0, 0, 0, 0.788));
+}
+
+.container-css {
+
     font-family: 'Roboto', sans-serif;
 }
 
@@ -16,12 +20,13 @@ ul {
 }
 
 .titulos {
-    font-size: 40px;
+    padding-left: 3.125rem;
+    font-size: 3rem;
     color: #70FF00;
 }
 
 .header_menu {
-    height: 60px;
+    height: 3.75rem;
     display: flex;
     align-items: center;
     justify-content: space-around;
@@ -39,40 +44,40 @@ ul {
 .header_list a {
     text-decoration: none;
     color: white;
-    margin: 15px;
+    margin: 0.9rem;
 }
 
 .links img {
-    height: 20px;
-    margin-right: 23px;
+    height: 1.3rem;
+    margin-right: 1.5rem;
 }
 
 .container_main {
-    padding-top: 80px;
+    padding-top: 5rem;
     display: flex;
     align-items: center;
-    justify-content: center;
+    justify-content: space-around;
 }
 
 .main_background {
     color: white;
-    margin-right: 280px;
+
 
 }
 
 .main_background_info h3 {
-    font-size: 30px;
+    font-size: 1.875rem;
 }
 
 .main_background_info h2 {
-    font-size: 30px;
-    margin-top: 120px;
+    font-size: 1.875rem;
+    margin-top: 7.5rem;
 }
 
 .main_background_info h1 {
-    font-size: 50px;
+    font-size: 3rem;
     position: absolute;
-    top: 268px;
+    top: 238px;
     color: #70FF00;
     border-right: 1px solid #70FF00;
     white-space: nowrap;
@@ -89,7 +94,7 @@ ul {
     }
 
     to {
-        width: 488px;
+        width: 438px;
     }
 }
 
@@ -106,12 +111,12 @@ ul {
 .main_info {
     display: flex;
     justify-content: space-between;
-    margin-top: 30px;
+    margin-top: 1.875rem;
 }
 
 .main_background_info_exp {
     color: #828282;
-    font-size: 20px;
+    font-size: 1.3rem;
     font-weight: 100;
     display: flex;
     align-items: center;
@@ -119,45 +124,46 @@ ul {
 
 .main_background_info_project {
     color: #828282;
-    font-size: 20px;
+    font-size: 1.3rem;
     font-weight: 100;
     display: flex;
     align-items: center;
 }
 
 .main_background_info_exp h2 {
-    font-size: 55px;
-    margin: 10px;
+    font-size: 4rem;
+    margin: 0.6rem;
 }
 
 .main_background_info_project h2 {
-    font-size: 55px;
-    margin: 10px;
+    font-size: 4rem;
+    margin: 0.6rem;
 }
 
 .main_aboutme {
-    width: 763px;
+    width: 70%;
     display: flex;
     flex-direction: column;
-    padding-left: 100px;
+    padding-left: 6rem;
     text-align: justify;
 }
 
 .main_aboutme h2 {
     color: #70FF00;
-    margin-bottom: 30px;
+    margin-bottom: 1.875rem;
 }
 
 .main_aboutme p {
     color: white;
+    margin-left: 100px;
 }
 
 .skills {
-    padding: 100px;
+    padding: 6rem;
 }
 
 .skills_image {
-    margin-top: 80px;
+    margin-top: 5rem;
     display: flex;
     justify-content: space-evenly;
 }
@@ -165,40 +171,38 @@ ul {
 .projetos {
     display: flex;
     flex-direction: column;
-    padding-left: 100px;
+    padding-left: 6rem;
 }
 
 .container_footer {
-    padding-left: 100px;
+    padding-left: 6rem;
     display: flex;
     flex-direction: column;
 
 }
 
 .text_footer {
-    padding: 30px;
+    padding: 1.875rem;
     display: flex;
     flex-direction: row;
+    justify-content: space-around;
 }
 
 .text_footer p {
     color: white;
-    width: 200px;
+    width: 300px;
     text-align: justify;
-    padding-left: 50px;
 }
 
 .links_footer {
-    height: 130px;
+    height: 8.125rem;
     display: flex;
     flex-direction: column;
     flex-wrap: wrap;
-    position: absolute;
-    right: 320px;
 }
 
 .links_footer a {
-    padding: 10px;
+    padding: 0.6rem;
 }
 
 
@@ -207,4 +211,86 @@ ul {
     color: white;
     display: flex;
     align-items: center;
+}
+
+@media (max-width: 1024px) {
+    .container-css {
+        max-width: 100vw;
+        min-height: 100vh;
+
+    }
+
+    .container_main {
+        display: grid;
+        justify-content: center;
+    }
+
+    .main_background_info h1 {
+        position: absolute;
+        top: 178px;
+    }
+
+
+}
+
+@media (max-width: 768px) {
+    .container-css {
+        display: grid;
+        justify-content: center;
+        padding-top: 10px;
+    }
+
+    .header_menu {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .container_main {
+        display: grid;
+        justify-content: center;
+    }
+
+    .main_background_info h1 {
+        position: absolute;
+        top: 178px;
+    }
+
+    .main_aboutme {
+        width: 80%;
+        display: flex;
+        align-items: flex-start;
+    }
+
+
+
+    .container_footer {
+        display: grid;
+    }
+
+    .text_footer {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        text-align: center;
+    }
+
+    .text_footer p {
+        width: 100%;
+        margin-bottom: 3.5rem;
+    }
+
+}
+
+@media (max-width: 480px) {
+
+    .container_main {
+        margin: 0;
+        display: grid;
+        justify-content: center;
+
+    }
+
+    .main_background_img img {
+        display: none;
+    }
 }
